@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Instrument Sans";
+    src: url("../fonts/Instrument_Sans/static/InstrumentSans-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Instrument Sans";
+    src: url("../fonts/Instrument_Sans/static/InstrumentSans-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-item a {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-item a:hover::after {
+    width: 100%;
+}
