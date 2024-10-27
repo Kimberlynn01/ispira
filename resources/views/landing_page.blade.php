@@ -8,13 +8,12 @@
     <title>Inspira</title>
     <link rel="stylesheet" href="{{ asset('assets/css/landingpage.css') }}">
     <script src="https://cdn.tailwindcss.com"></script>
-   
+
 </head>
 
 
 
 <body>
-
 
     <header>
         @include('layouts.landingPage.navbar')
@@ -23,6 +22,7 @@
     <main>
 
     </main>
+
 </body>
 
 </html>

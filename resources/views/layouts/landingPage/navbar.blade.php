@@ -5,5 +5,6 @@
         <li class="nav-item"><a href="#service">Service</a></li>
         <li class="nav-item"><a href="#about">About Us</a></li>
     </ul>
-    <button class="bg-[#FFFFFF] text-[#1C1C1C] p-1 rounded text-[16px]">Let's Join</button>
+    <button class="bg-[#FFFFFF] text-[#1C1C1C] py-2 px-3 rounded text-[12px]"
+        style="font-family: 'Instrument Sans'; font-weight: 400;">Let's Join</button>
 </nav>
