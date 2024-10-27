@@ -1,13 +1,19 @@
 @font-face {
     font-family: "Instrument Sans";
-    src: url("../fonts/Instrument_Sans/static/InstrumentSans-Bold.ttf");
+    src: url("/assets/fonts/Instrument_Sans/static/InstrumentSans-Bold.ttf") format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: "Instrument Sans";
-    src: url("../fonts/Instrument_Sans/static/InstrumentSans-Regular.ttf");
+    src: url("../fonts/Instrument_Sans/static/InstrumentSans-Regular.ttf") format('truetype');
     font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "IS";
+    src: url("../fonts/Instrument_Sans/static/InstrumentSans_Condensed-BoldItalic.ttf") format('truetype');
+    font-weight: bolder;
     font-style: normal;
 }
 
@@ -33,3 +39,19 @@
 .nav-item a:hover::after {
     width: 100%;
 }
+
+/* JUMBOTRON OR SECTION HERO */
+.heading {
+    font-family: 'Instrument Sans';
+    font-weight: bold;
+}
+
+/* SERVICE */
+
+.service {
+    font-family: "IS",;
+    font-weight: 100;
+}
+
+
+
