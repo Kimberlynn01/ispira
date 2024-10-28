@@ -1,18 +1,21 @@
 @font-face {
     font-family: "Instrument Sans";
-    src: url("/assets/fonts/Instrument_Sans/static/InstrumentSans-Bold.ttf") format('truetype');
+    src: url("/assets/fonts/Instrument_Sans/static/InstrumentSans-Bold.ttf")
+        format("truetype");
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: "Instrument Sans";
-    src: url("../fonts/Instrument_Sans/static/InstrumentSans-Regular.ttf") format('truetype');
+    src: url("../fonts/Instrument_Sans/static/InstrumentSans-Regular.ttf")
+        format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: "IS";
-    src: url("../fonts/Instrument_Sans/static/InstrumentSans_Condensed-BoldItalic.ttf") format('truetype');
+    src: url("../fonts/Instrument_Sans/static/InstrumentSans_Condensed-BoldItalic.ttf")
+        format("truetype");
     font-weight: bolder;
     font-style: normal;
 }
@@ -40,8 +43,8 @@
     width: 100%;
 }
 
-
-#navMenu, #joinButton {
+#navMenu,
+#joinButton {
     display: none;
 }
 
@@ -54,16 +57,73 @@
     }
 }
 
-
-/* JUMBOTRON OR SECTION HERO */
-.heading {
-    font-family: 'Instrument Sans';
+@font-face {
+    font-family: "Instrument Sans";
+    src: url("/assets/fonts/Instrument_Sans/static/InstrumentSans-Regular.ttf")
+        format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Instrument Sans Bold";
+    src: url("/assets/fonts/Instrument_Sans/static/InstrumentSans-Bold.ttf")
+        format("truetype");
     font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Instrument Sans BI";
+    src: url("/assets/fonts/Instrument_Sans/static/InstrumentSans-BoldItalic.ttf")
+        format("truetype");
+    font-weight: bolder;
+    font-style: normal;
 }
 
-/* SERVICE */
+.swiper-slide {
+    transition: transform 0.3s ease;
+}
 
-.service {
-    font-family: "IS",;
-    font-weight: 100;
+.swiper-slide-active {
+    transform: scale(1.15);
+}
+
+@media (max-width: 767px) {
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.1s ease, transform 0.1s ease;
+    }
+
+    #navMenu.show {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    ul li {
+        font-family: "Instrument Sans";
+        font-weight: 400;
+    }
+}
+
+.swiper-container {
+    overflow: hidden;
+}
+
+.swiper-slide {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+.swiper-slide-active {
+    transform: scale(1.2);
+    width: 350px;
+    height: 450px;
 }
