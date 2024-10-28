@@ -38,8 +38,26 @@
             transform: scale(1.15);
         }
 
+        @media (max-width: 767px) {
+            #navMenu {
+                display: none;
+                flex-direction: column;
+                opacity: 0;
+                transform: translateY(-10px);
+                transition: opacity 0.1s ease, transform 0.1s ease;
+            }
 
+            #navMenu.show {
+                display: flex;
+                opacity: 1;
+                transform: translateY(0);
+            }
 
+            ul li {
+                font-family: 'Instrument Sans';
+                font-weight: 400;
+            }
+        }
 
     </style>
 </head>
@@ -55,7 +73,7 @@
     <main>
         <section id="home">
             <div class="container py-20 px-5 mx-auto my-40 text-center">
-                <h2 class="heading text-[46px]">
+                <h2 class="heading text-[46px]" style="font-family: 'Instrument Sans BI'; ">
                     Inspira: Simplify Your Portfolio Creation <br>& Unlock Potential
                 </h2>
                 <br>
@@ -74,7 +92,7 @@
                     <span class="h-px bg-white w-5"></span>
                 </h2>
 
-                <div class="swiper-container w-full max-w-xl">
+                {{-- <div class="swiper-container w-full max-w-xl">
                     <div class="swiper-wrapper">
                         <!-- Card 1 -->
                         <div class="swiper-slide bg-white w-40 h-52 rounded-lg shadow-md flex justify-center items-center text-black font-bold">Service 1</div>
@@ -85,29 +103,37 @@
                         <!-- Card 4 -->
                         <div class="swiper-slide bg-white w-40 h-52 rounded-lg shadow-md flex justify-center items-center text-black font-bold">Service 4</div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </section>
     </main>
 
 
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 3,
-            centeredSlides: true,
-            spaceBetween: 20,
-            loop: true,
-            grabCursor: true,
-            // Mengatur tampilan card yang lebih besar di tengah
-            on: {
-                slideChange: function () {
-                    // Menambahkan kelas khusus untuk slide aktif
-                    swiper.slides.forEach(slide => slide.classList.remove('swiper-slide-active'));
-                    swiper.slides[swiper.activeIndex].classList.add('swiper-slide-active');
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                centeredSlides: true,
+                spaceBetween: 20,
+                loop: true,
+                grabCursor: true,
+                on: {
+                    slideChange: function () {
+                        swiper.slides.forEach(slide => slide.classList.remove('swiper-slide-active'));
+                        swiper.slides[swiper.activeIndex].classList.add('swiper-slide-active');
+                    },
                 },
-            },
-        });
+            });
     </script>
+
+
+<script>
+    document.getElementById("hamburger").addEventListener("click", function() {
+    const navMenu = document.getElementById("navMenu");
+    navMenu.classList.toggle("show");
+});
+
+</script>
+
 
 </body>
 </html>

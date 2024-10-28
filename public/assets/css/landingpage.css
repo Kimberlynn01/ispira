@@ -40,6 +40,21 @@
     width: 100%;
 }
 
+
+#navMenu, #joinButton {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    #navMenu {
+        display: flex;
+    }
+    #joinButton {
+        display: inline-block;
+    }
+}
+
+
 /* JUMBOTRON OR SECTION HERO */
 .heading {
     font-family: 'Instrument Sans';
@@ -52,6 +67,3 @@
     font-family: "IS",;
     font-weight: 100;
 }
-
-
-
