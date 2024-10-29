@@ -89,11 +89,26 @@
                 ABOUT US
                 <span class="h-px bg-black w-5"></span>
             </h2>
+
+            <div class="flex justify-center">
+                <div
+                    class="bg-white w-[50%] mb-[100px] rounded-lg flex justify-center items-center flex-col gap-3 mt-10">
+                    <p class="text-[16px] text-center text-[#828282]"
+                        style="font-family: 'Instrument Sans'; font-weight: 400;">
+                        Inspira adalah platform website yang dirancang untuk memudahkan Anda dalam membuat portofolio
+                        pribadi yang profesional dan menarik. Dengan tema-tema yang beragam dan dapat disesuaikan,
+                        Inspira memungkinkan Anda untuk menampilkan karya dan prestasi Anda dengan cara yang unik dan
+                        kreatif. Kami percaya bahwa setiap individu memiliki potensi luar biasa, dan kami berkomitmen
+                        untuk membantu Anda merealisasikan potensi tersebut melalui portofolio yang elegan dan mudah
+                        diakses. Bergabunglah dengan Inspira dan mulailah perjalanan Anda dalam membangun portofolio
+                        impian Anda hari ini!
+                    </p>
+                </div>
+            </div>
         </section>
-
-
     </main>
-
+    <footer class="bg-[#1C1C1C] flex flex-col items-center text-white p-5">
+    </footer>
 
     <script>
         document.getElementById("hamburger").addEventListener("click", function() {

@@ -19,6 +19,6 @@
         <li class="nav-item p-3 md:p-0 mx-auto text-center"><a href="#about">About Us</a></li>
     </ul>
 
-    <button class="hidden md:block bg-[#FFFFFF] text-[#1C1C1C] py-2 px-3 rounded text-[16px]"
+    <button class="hidden md:block bg-[#FFFFFF] text-[#1C1C1C] py-2 px-3 rounded text-[14px]"
         style="font-family: 'Instrument Sans'; font-weight: 400;">Let's Join</button>
 </nav>
