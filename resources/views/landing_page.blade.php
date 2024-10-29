@@ -39,17 +39,17 @@
                 <div class="button flex justify-center mt-[30px]">
                     <button class="text-[#FFFFFF] bg-[#1C1C1C] py-3 mx-2 text-[16px] px-5 rounded"
                         style="font-family: 'Instrument Sans Bold'; font-weight: bold;">Let's Join</button>
-                    <a href="#service" class="text-[#1C1C1C] bg-[#CCCCCC] py-3 mx-2 text-[16px] px-5 rounded"
+                    <a href="#feature" class="text-[#1C1C1C] bg-[#CCCCCC] py-3 mx-2 text-[16px] px-5 rounded"
                         style="font-family: 'Instrument Sans'; ">Learn Now!</a>
                 </div>
             </div>
         </section>
-        <section id="service">
-            <div class="bg-[#1C1C1C] h-[550px] w-screen">
+        <section id="feature">
+            <div class="bg-[#1C1C1C] h-[550px]">
                 <h2 class="service pt-[45px] justify-center text-white text-[25px] flex items-center gap-4"
                     style="font-family: 'Instrument Sans BI'; font-weight: bolder;">
                     <span class="h-px bg-white w-5"></span>
-                    SERVICE
+                    FEATURES
                     <span class="h-px bg-white w-5"></span>
                 </h2>
 
@@ -81,6 +81,14 @@
 
                 </div>
             </div>
+        </section>
+        <section id="aboutus">
+            <h2 class="service pt-[45px] justify-center text-[#1C1C1C] text-[25px] flex items-center gap-4"
+                style="font-family: 'Instrument Sans BI'; font-weight: bolder;">
+                <span class="h-px bg-black w-5"></span>
+                ABOUT US
+                <span class="h-px bg-black w-5"></span>
+            </h2>
         </section>
 
 
