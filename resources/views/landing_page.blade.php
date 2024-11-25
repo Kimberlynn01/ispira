@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="{{ asset('assets/css/landingpage.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
@@ -76,9 +75,7 @@
                         <div
                             class="swiper-slide flex items-center justify-center bg-white rounded-lg w-[250px] h-[400px] transform transition-transform duration-300">
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </section>
